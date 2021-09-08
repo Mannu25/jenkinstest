@@ -1,0 +1,22 @@
+{
+  "name": "app-jenkins",
+  "version": "1.0.0",
+  "description": "test jenkins build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mannu25/jenkinstest.git"
+  },
+  "author": "Mannu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mannu25/jenkinstest/issues"
+  },
+  "homepage": "https://github.com/Mannu25/jenkinstest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
