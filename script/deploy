@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -i ~/.ssh/id_rsa ec2-user@ec2-3-108-184-221.ap-south-1.compute.amazonaws.com <<EOF
+ssh ubuntu@3.109.214.139 <<EOF
  cd ~/jenkinstest
  git pull origin main
  npm install
