@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh label "", script "scp /var/lib/jenkins/workspace/test/. ssh mannu@172.31.9.56 /var/mannu/."
+                sh "npm start"
+            }
+        }
+    }
+}
