@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh label "", script "scp /var/lib/jenkins/workspace/test/. ssh mannu@172.31.9.56 /var/mannu/."
+                sh label "", script "scp /var/lib/jenkins/workspace/test2/. ssh mannu@172.31.9.56 /var/mannu/."
                 sh "npm start"
             }
         }
